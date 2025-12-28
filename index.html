@@ -1,0 +1,179 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siddharth weds Ananya</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+  body { margin: 0; font-family: 'Playfair Display', serif; background: #fff6ee; color: #5b1a1a; }
+  nav { position: fixed; top: 0; width: 100%; background: white; padding: 12px 20px; z-index: 999; display: flex; justify-content: space-between; box-shadow: 0 2px 6px rgba(0,0,0,0.1);}
+  nav a { text-decoration: none; color: #5b1a1a; margin: 0 10px; font-weight: 600;}
+  .section { padding: 100px 20px; text-align: center; }
+  .hero-img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid #8b0000; margin: auto; display: block; }
+  .couple-names { font-family: 'Great Vibes', cursive; font-size: 3em; margin: 20px 0; color: #8b0000; }
+  .countdown { font-size: 2em; font-weight: bold; margin-top: 15px; color: #8b0000; }
+  iframe { width: 100%; height: 300px; border: 0; border-radius: 8px; margin-top: 20px; }
+  .event-slider { display: flex;    gap: 20px;  overflow-x: auto;   scroll-snap-type: x mandatory;  padding: 20px 10px; }
+.event-card {min-width: 260px;background: #fff;border-radius: 16px;box-shadow: 0 8px 20px rgba(0,0,0,0.1);scroll-snap-align: center;padding-bottom: 15px;}
+
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.event-card h3 {
+  margin: 15px 0 5px;
+  color: #8b0000;
+}
+
+.event-card p {
+  margin: 5px 0;
+  font-size: 0.95em;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <div><strong>Wedding Invite</strong></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#story">Story</a>
+    <a href="#events">Events</a>
+    <a href="#photos">Photos</a>
+    <a href="#venue">Venue</a>
+  </div>
+</nav>
+
+<!-- Hero / Countdown -->
+<div class="section" id="about">
+  <img src="537A8882.jpg" alt="" class="hero-img">
+  <div class="couple-names">Siddharth & Ananya</div>
+  <div class="countdown" id="countdown">00 Days 00 Hours 00 Mins 00 Secs</div>
+</div>
+
+<!-- Invocation & Details -->
+<div class="section">
+  <h2>With the Blessings of God and Elders</h2>
+  <p>
+    Mr. Rajesh & Mrs. Jayashree Rajesh cordially invite you to the wedding of their beloved son<br>
+    <strong>Siddharth</strong> with<br>
+    <strong><b>Ananya</b></strong><br>
+    (Daughter of Mr. Ramakrishnan & Mrs. Bhuvaneswari)<br>
+    Sunday, 08 March 2026 at 10:00 AM<br>
+    Lotus Mahal, Perur via Madhampatti, Coimbatore – 641010
+  </p>
+</div>
+
+<!-- Story -->
+<div class="section" id="story">
+  <h2>How We Met</h2>
+  <p>
+    <b><i>October 2nd, 2025 </b></i><br>
+    Me and Ananya had spoken on the phone before meeting in person, 
+    to get to know at least somethings about each other. <br>
+
+    We decided to meet at La Café, RS Puram. I got there before her, as the gentleman I am and she got there
+    exactly as we had decided we'd meet.
+    <br>
+
+    She seemed (was) nervous. I was calm, given that I looked at our first date as an interview. <br>
+
+    <i>(Technically, all 1st dates are interviews)😝
+
+    </i>
+
+  </p>
+</div>
+
+<!-- Events -->
+<div class="section" id="events">
+  <h2>Wedding Events</h2>
+
+  <div class="event-slider">
+
+    <div class="event-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Indian_wedding_haldi_ceremony.jpg">
+      <h3>Haldi</h3>
+      <p>Traditional turmeric ceremony</p>
+      <p><strong>06 March 2026</strong></p>
+    </div>
+
+    <div class="event-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Mehndi_ceremony.jpg">
+      <h3>Mehendi</h3>
+      <p>Henna & celebrations</p>
+      <p><strong>07 March 2026</strong></p>
+    </div>
+
+    <div class="event-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Indian_wedding_sangeet.jpg">
+      <h3>Sangeet</h3>
+      <p>Music & dance night</p>
+      <p><strong>07 March 2026</strong></p>
+    </div>
+
+    <div class="event-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Hindu_wedding_ceremony.jpg">
+      <h3>Wedding</h3>
+      <p>Muhurtham Ceremony</p>
+      <p><strong>08 March 2026 · 10:00 AM</strong></p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Photos -->
+<div class="section" id="photos">
+  <h2>Photos</h2>
+  <img src="Siana.jpg" width="220">
+  <img src="SidAna.jpeg" width="220">
+</div>
+
+<!-- Venue with Google Maps -->
+<div class="section" id="venue">
+  <h2>Venue</h2>
+  <p>Lotus Mahal, Perur via Madhampatti, Coimbatore – 641010</p>
+  <iframe
+    src="https://www.google.com/maps?q=Lotus%20Mahal%20Perur%20Coimbatore&output=embed"
+    loading="lazy">
+  </iframe>
+</div>
+
+<!-- Compliments -->
+<div class="section">
+  <h2>With Best Compliments From</h2>
+  <p>
+    Shruti Rajesh<br>
+    Vaidyanathan G & family<br>
+    Natesan & family<br>
+    Grandmothers: Lakshmi Ganapathy & Bhagyalakshmi Raman
+  </p>
+</div>
+
+<!-- JavaScript Countdown -->
+<script>
+  function updateCountdown() {
+    const weddingDate = new Date("March 08, 2026 10:00:00 GMT+0530").getTime();
+    const now = new Date().getTime();
+    const diff = weddingDate - now;
+    if (diff <= 0) return document.getElementById("countdown").innerText = "Today is the Wedding Day!";
+    const d = Math.floor(diff / (1000*60*60*24));
+    const h = Math.floor((diff/(1000*60*60))%24);
+    const m = Math.floor((diff/(1000*60))%60);
+    const s = Math.floor((diff/1000)%60);
+    document.getElementById("countdown").innerText = `${d} Days ${h} Hours ${m} Mins ${s} Secs`;
+  }
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+</body>
+</html>
