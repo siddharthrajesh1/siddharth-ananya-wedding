@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>Siddharth weds Ananya</title>
 
 <!-- Google Fonts -->
@@ -30,8 +30,27 @@ nav a { text-decoration: none; color: #5b1a1a; margin: 0 10px; font-weight: 600;
 }
 .countdown { font-size: 2em; font-weight: bold; margin-top: 15px; color: #8b0000; }
 iframe { width: 100%; height: 300px; border: 0; border-radius: 8px; margin-top: 20px; }
-.event-slider { display: flex;    gap: 20px;  overflow-x: auto;   scroll-snap-type: x mandatory;  padding: 20px 10px; }
-.event-card {min-width: 260px;background: #fff;border-radius: 16px;box-shadow: 0 8px 20px rgba(0,0,0,0.1);scroll-snap-align: center;padding-bottom: 10px;}
+.event-slider {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 16px 20px;
+
+  max-width: 100%;
+  box-sizing: border-box;
+
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.event-slider::-webkit-scrollbar {
+  display: none;
+}
+.event-card {
+  flex: 0 0 240px;
+  max-width: 240px;
+}
 .countdown-wrapper {display: flex;justify-content: center;gap: 15px;flex-wrap: wrap;}
 .time-box {background: #fff;border-radius: 14px;padding: 15px 18px;min-width: 80px;box-shadow: 0 6px 15px rgba(0,0,0,0.1);animation: pop 0.4s ease-in-out;}
 .time-box span {display: block;font-size: 1.8em;font-weight: 700;color: #8b0000;}
@@ -58,7 +77,7 @@ html {scroll-behavior: smooth;}
 .footer-names {
   font-family: 'Playfair Script', cursive;
   font-size: 3em;
-  color: #8b0000;
+  color: #6b1c7f;
   margin-bottom: 2px;
   animation: softGlow 3s ease-in-out infinite;
 }
@@ -111,6 +130,22 @@ html {scroll-behavior: smooth;}
     height: 100%;
     overscroll-behavior: none;
   }
+}
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.hashtag {
+  color: #8b0000;
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(139, 0, 0, 0.25);
 }
 
 </style>
@@ -219,11 +254,10 @@ html {scroll-behavior: smooth;}
   <h2>How We Met</h2>
   <p>
     <b><i>October 2nd, 2025 </b></i><br>
-  October 2nd, 2025
   Before meeting in person, Ananya and I spoke over the phone — just enough to break the ice. <br>
   We decided to meet at La Café, RS Puram. I arrived early (gentleman duties 😉), and she arrived right on time.<br>
   She was a little (a lot actually) nervous. <br>
-  I was calm, treating our first date like an interview.
+  I was calm, treating our first date like an interview.<br>
   Because lets be honest… aren’t all first dates interviews? 😝
   </p>
 </div>
@@ -231,7 +265,10 @@ html {scroll-behavior: smooth;}
 <div class="section2" class="hero-img">
 <h2> A Picture is worth a thousand words </h2>
 😁📸
-<h4>Help us capture our precious moments by tagging your photos with the hashtag <b>#Siana</b> </h4>
+<h4>
+  Help us capture our precious moments by tagging your photos with the hashtag
+  <span class="hashtag">#Siana</span>
+</h4>
     <img src="insta.jpeg" >
     </div>
   </div>
@@ -288,6 +325,18 @@ html {scroll-behavior: smooth;}
 window.addEventListener("pageshow", function () {
   document.body.style.zoom = "1";
 });
+</script>
+
+<script>
+(function () {
+  document.addEventListener("gesturestart", function (e) {
+    e.preventDefault();
+  });
+
+  window.addEventListener("pageshow", function () {
+    document.body.style.zoom = "1";
+  });
+})();
 </script>
 
 <!-- FOOTER -->
